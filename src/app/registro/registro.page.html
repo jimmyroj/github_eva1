@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="sesion"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Duoc UC</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-text color="primary" class="ion-text-center">
+    <h1>Datos de persona</h1>
+  </ion-text>
+
+  <ion-item>
+    <ion-label>Nombre</ion-label>
+    <ion-input placeholder="Username" #nombre></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Apellido</ion-label>
+    <ion-input placeholder="Lastname" #lastname></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Contraseña</ion-label>
+    <ion-input placeholder="Password" type="password" #pass></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Edad</ion-label>
+    <ion-input placeholder="Age" type="number" #edad></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Url de imagen</ion-label>
+    <ion-input #url></ion-input>
+  </ion-item>
+  <br><br>
+  <ion-button (click)="guardar(nombre,lastname,pass,edad,url)" expand="block" shape="round">
+    Guardar
+  </ion-button>
+
+</ion-content>

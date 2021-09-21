@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="sesion"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Duoc UC</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Nombre</ion-label>
+    <ion-input placeholder="Username" #nombre></ion-input>
+  </ion-item>
+  <br>
+  <ion-button (click)="recuperar(nombre)" expand="block" shape="round">Recuperar</ion-button>
+</ion-content>
